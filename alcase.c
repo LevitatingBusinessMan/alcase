@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <string.h>
+
+void alternate(char c);
 
 int main(int argc, char *argv[])
 {
