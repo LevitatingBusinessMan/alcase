@@ -9,4 +9,4 @@ clean:
 	rm -v alcase
 
 install:
-	install -vm 755 ./alcase $(DESTDIR)$(PREFIX)/bin/alcase
+	install -Dvm 755 ./alcase $(DESTDIR)$(PREFIX)/bin/alcase
