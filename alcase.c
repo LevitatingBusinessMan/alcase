@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 {
 	if (argc > 1)
 	{
-		if (strcmp(argv[0], "--help") == 0 || strcmp(argv[0], "-h") == 0)
+		if (strcmp(argv[1], "--help") == 0 || strcmp(argv[1], "-h") == 0)
 		{
 			printf("ThIs TuRnS tExT iNtO AlTeRnAtInG cAsE\nCan read both stdin or argv\n");
 			return 0;
@@ -20,9 +20,12 @@ int main(int argc, char *argv[])
 			{
 				alternate(arg[j]);
 			}
-			if (i+1 != argc) {
+			if (i + 1 != argc)
+			{
 				putchar(' ');
-			} else {
+			}
+			else
+			{
 				putchar('\n');
 			}
 		}
@@ -45,12 +48,14 @@ void alternate(char c)
 {
 	if (c >= 0x41 && c <= 0x5a)
 	{
-		if (!ncase) c = c + 0x20;
+		if (!ncase)
+			c = c + 0x20;
 		ncase = !ncase;
 	}
 	else if (c >= 0x61 && c <= 0x7a)
 	{
-		if (ncase) c = c - 0x20;
+		if (ncase)
+			c = c - 0x20;
 		ncase = !ncase;
 	}
 
