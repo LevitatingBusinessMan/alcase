@@ -1,5 +1,5 @@
 ifeq ($(PREFIX),)
-    PREFIX := /usr
+    PREFIX := /usr/local
 endif
 
 build:
